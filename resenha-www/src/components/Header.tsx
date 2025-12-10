@@ -31,8 +31,7 @@ export function Header() {
                             <div className="hidden md:flex items-center space-x-8">
                                 <a href="/#features" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Funcionalidades</a>
                                 <a href="/#partners" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Parceiros</a>
-                                <Link to="/planos" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Para Bares</Link>
-                            </div>
+                                <a href="/#business" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Para Bares</a>        </div>
                         </div>
 
                         <div className="hidden md:flex items-center gap-4">

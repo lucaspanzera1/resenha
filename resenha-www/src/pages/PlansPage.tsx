@@ -5,6 +5,7 @@ import { Footer } from '../components/Footer';
 
 function PlansPage() {
     React.useEffect(() => {
+        window.scrollTo(0, 0);
         // @ts-ignore
         if (window.WOW) {
             // @ts-ignore

@@ -415,6 +415,9 @@ function LandingPage() {
                     </div>
                 </section>
 
+
+
+
                 {/* Business/SaaS CTA */}
                 <section id="business" className="py-24 relative overflow-hidden">
                     <div className="absolute inset-0 bg-emerald-900/10" />
@@ -469,6 +472,102 @@ function LandingPage() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                {/* How it Works (For Bars) */}
+                <section className="py-24 bg-gray-950 relative overflow-hidden">
+                    {/* Background Elements */}
+                    <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                    <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                        <div className="text-center max-w-3xl mx-auto mb-20">
+                            <h2 className="wow animate__animated animate__fadeInUp text-3xl md:text-5xl font-bold text-white mb-6">
+                                É simples transformar seu bar
+                            </h2>
+                            <p className="wow animate__animated animate__fadeInUp data-wow-delay-100ms text-lg text-gray-400">
+                                Três passos para lotar a casa em dias de jogo.
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                            {/* Step 1: Import */}
+                            <div className="wow animate__animated animate__fadeInUp group relative p-1 rounded-3xl bg-gradient-to-b from-white/10 to-transparent hover:from-emerald-500/50 transition-all duration-500">
+                                <div className="absolute inset-0 bg-gray-900 rounded-3xl" />
+                                <div className="relative h-full bg-gray-900/50 backdrop-blur-xl rounded-[22px] p-8 overflow-hidden border border-white/5 group-hover:border-transparent transition-colors">
+                                    {/* Number */}
+                                    <div className="absolute -right-4 -top-4 text-9xl font-black text-white/[0.03] select-none group-hover:text-emerald-500/[0.05] transition-colors">1</div>
+
+                                    {/* Visual Abstract */}
+                                    <div className="h-40 mb-8 rounded-2xl bg-gray-800/50 border border-white/5 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+                                        <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png')] bg-cover bg-center opacity-20 grayscale group-hover:grayscale-0 group-hover:opacity-40 transition-all duration-500" />
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-red-500">
+                                                <MapPin size={24} fill="currentColor" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-white mb-4">Importe do Google</h3>
+                                    <p className="text-gray-400">
+                                        Conecte sua conta e importe fotos, endereço e avaliações do seu bar em segundos. Sem cadastro manual.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Step 2: Share */}
+                            <div className="wow animate__animated animate__fadeInUp data-wow-delay-200ms group relative p-1 rounded-3xl bg-gradient-to-b from-white/10 to-transparent hover:from-emerald-500/50 transition-all duration-500">
+                                <div className="absolute inset-0 bg-gray-900 rounded-3xl" />
+                                <div className="relative h-full bg-gray-900/50 backdrop-blur-xl rounded-[22px] p-8 overflow-hidden border border-white/5 group-hover:border-transparent transition-colors">
+                                    <div className="absolute -right-4 -top-4 text-9xl font-black text-white/[0.03] select-none group-hover:text-emerald-500/[0.05] transition-colors">2</div>
+
+                                    <div className="h-40 mb-8 rounded-2xl bg-gray-800/50 border border-white/5 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 flex flex-col items-center justify-center gap-2">
+                                        <div className="w-3/4 h-8 bg-gray-700 rounded-md animate-pulse delay-75" />
+                                        <div className="w-3/4 h-8 bg-emerald-500/20 rounded-md border border-emerald-500/30 flex items-center px-3 gap-2">
+                                            <div className="w-4 h-4 rounded-full bg-emerald-500" />
+                                            <div className="h-2 w-20 bg-emerald-500/50 rounded" />
+                                        </div>
+                                        <div className="w-3/4 h-8 bg-gray-700 rounded-md animate-pulse delay-150" />
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-white mb-4">Monte a Agenda</h3>
+                                    <p className="text-gray-400">
+                                        Escolha os jogos da semana na nossa base de dados. Nós avisamos os torcedores que procuram por eles.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Step 3: Profit */}
+                            <div className="wow animate__animated animate__fadeInUp data-wow-delay-400ms group relative p-1 rounded-3xl bg-gradient-to-b from-white/10 to-transparent hover:from-emerald-500/50 transition-all duration-500">
+                                <div className="absolute inset-0 bg-gray-900 rounded-3xl" />
+                                <div className="relative h-full bg-gray-900/50 backdrop-blur-xl rounded-[22px] p-8 overflow-hidden border border-white/5 group-hover:border-transparent transition-colors">
+                                    <div className="absolute -right-4 -top-4 text-9xl font-black text-white/[0.03] select-none group-hover:text-emerald-500/[0.05] transition-colors">3</div>
+
+                                    <div className="h-40 mb-8 rounded-2xl bg-gray-800/50 border border-white/5 relative overflow-hidden group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
+                                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent z-10" />
+                                        <div className="flex -space-x-4">
+                                            {[1, 2, 3, 4].map(i => (
+                                                <div key={i} className="w-12 h-12 rounded-full bg-gray-700 border-2 border-gray-800 flex items-center justify-center text-xs font-bold text-white relative z-0 group-hover:z-10 transition-all group-hover:-translate-y-1">
+                                                    <Users size={20} />
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <div className="absolute bottom-4 left-0 right-0 text-center z-20">
+                                            <span className="bg-emerald-500 text-white text-xs px-2 py-1 rounded-full font-bold">Lotação Máxima</span>
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-white mb-4">Receba a Torcida</h3>
+                                    <p className="text-gray-400">
+                                        Gerencie reservas e pedidos. Fidelize clientes que voltam sempre para assistir ao time do coração.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
