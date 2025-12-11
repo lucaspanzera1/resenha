@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Logo } from './Logo';
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,14 +25,15 @@ export function Header() {
                     <div className="flex items-center justify-between h-16 md:h-20">
                         <div className="flex items-center gap-12">
                             <div className="flex-shrink-0">
-                                <Link to="/" className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400">
-                                    ResenhaConfirmada
+                                <Link to="/#top" className="flex items-center gap-2 group">
+                                    <Logo className="w-10 h-10 transition-transform group-hover:scale-110" />
                                 </Link>
                             </div>
                             <div className="hidden md:flex items-center space-x-8">
                                 <a href="/#features" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Funcionalidades</a>
                                 <a href="/#partners" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Parceiros</a>
-                                <a href="/#business" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Para Bares</a>        </div>
+                                <a href="/#business" className="text-gray-400 hover:text-white transition-colors text-sm font-medium">Para Bares</a>
+                            </div>
                         </div>
 
                         <div className="hidden md:flex items-center gap-4">
@@ -50,7 +52,7 @@ export function Header() {
 
                 {/* Mobile menu */}
                 {isMenuOpen && (
-                    <div className="md:hidden bg-gray-950/95 backdrop-blur-xl border-b border-white/10 animate-fade-in fixed inset-x-0 z-40 border-t border-white/5 shadow-2xl">
+                    <div className="md:hidden bg-gray-950/95 backdrop-blur-xl border-b border-white/10 animate-fade-in fixed inset-x-0 z-40 border-t border-white/5 shadow-2xl" id='top'>
                         <div className="px-4 pt-4 pb-8 space-y-4">
                             <a href="/#features" onClick={() => setIsMenuOpen(false)} className="block text-gray-300 hover:text-white py-3 px-4 rounded-lg hover:bg-white/5 transition-all text-lg font-medium">Funcionalidades</a>
                             <a href="/#partners" onClick={() => setIsMenuOpen(false)} className="block text-gray-300 hover:text-white py-3 px-4 rounded-lg hover:bg-white/5 transition-all text-lg font-medium">Parceiros</a>

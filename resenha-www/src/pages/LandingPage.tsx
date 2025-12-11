@@ -16,7 +16,7 @@ function LandingPage() {
     }, []);
 
     return (
-        <div className="min-h-screen font-sans selection:bg-emerald-500/30 bg-gray-950 text-gray-50 overflow-x-hidden">
+        <div className="min-h-screen font-sans selection:bg-emerald-500/30 bg-gray-950 text-gray-50 overflow-x-hidden" id='top'>
             <Helmet>
                 <title>ResenhaConfirmada - O seu estádio no bar</title>
                 <meta name="description" content="A maior rede de bares esportivos do Brasil. Encontre onde assistir jogos de futebol, ufc e nfl, organize sua torcida e viva a emoção do estádio no bar." />
